@@ -1,1 +1,36 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+	--main-font-family: 'Inter-Variable', sans-serif;
+	--accent-font-family: 'PressStart2P', sans-serif;
+	--heart-color: red;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--title-font-weight: "wght" 700;
+		--text-font-weight: "wght" 400;
+		--page-bg-color: #fff;
+		--bg-color: #d3d3d3;
+		--bg-color-from: #e7e7e7;
+		--bg-color-to: #1a1a1a;
+		--border-color: var(--text-color);
+		--text-color: #000;
+		--text-stroke: var(--page-bg-color);
+		--mix-color: var(--page-bg-color);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--title-font-weight: "wght" 785;
+		--text-font-weight: "wght" 465;
+		--page-bg-color: #000;
+		--bg-color: var(--page-bg-color);
+		--bg-color-from: #007f0c;
+		--bg-color-to: #004306;
+		--border-color: var(--text-color);
+		--text-color: #00cc14;
+		--text-stroke: var(--page-bg-color);
+		--mix-color: var(--text-color);
+	}
+}
