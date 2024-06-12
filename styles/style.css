@@ -31,7 +31,7 @@
       180deg,
       var(--bg-color-from),
       var(--bg-color-to),
-      transparent 2px
+      transparent 2px 
     ),
     repeating-linear-gradient(
       180deg,
@@ -438,12 +438,6 @@
   color: var(--text-color);
 }
 
-@media (width <= 375px) {
-  .dialog {
-    padding: 30px 40px;
-  }
-}
-
 .dialog[open]::backdrop {
   background-color: black;
   opacity: 0.75;
@@ -480,4 +474,19 @@
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+@media (width <= 375px) {
+  .dialog {
+    padding: 30px 40px;
+  }
+
+  .dialog__message {
+    width: 75%;
+  }
+
+  .button__icon {
+    width: 28px;
+    height: 28px;
+  }
 }
