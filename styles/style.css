@@ -39,14 +39,14 @@
 }
 
 /* Фильтры */
-.contrast {filter: contrast(150%);}
-.blur {filter: blur(10px);}
-.hue-rotate {filter: hue-rotate(60deg);}
-.invert {filter: invert(80%);}
-.opacity {filter: opacity(50%);}
-.saturate {filter: saturate(400%);}
-.sepia {filter: sepia(40%);}
-.multi {filter: saturate(200%) hue-rotate(30deg) contrast(180%) sepia(20%) invert(20%)}
+.contrast {filter: contrast(150%)};
+.blur {filter: blur(10px)};
+.hue-rotate {filter: hue-rotate(60deg)};
+.invert {filter: invert(80%)};
+.opacity {filter: opacity(50%)};
+.saturate {filter: saturate(400%)};
+.sepia {filter: sepia(40%)};
+.multi {filter: saturate(200%) hue-rotate(30deg) contrast(180%) sepia(20%) invert(20%)};
 /* .Фильтры */
 
 /* SVG */
