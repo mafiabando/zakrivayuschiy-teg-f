@@ -25,15 +25,13 @@
       90deg,
       var(--bg-color),
       var(--bg-color),
-      transparent 2px,
-      transparent 4px
+      transparent 2px
     ),
     repeating-linear-gradient(
       180deg,
       var(--bg-color-from),
       var(--bg-color-to),
-      transparent 2px,
-      transparent 4px
+      transparent 2px
     ),
     repeating-linear-gradient(
       180deg,
