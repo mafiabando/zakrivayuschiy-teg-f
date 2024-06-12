@@ -51,6 +51,12 @@
   padding-block-end: 105px;
 }
 
+.theme-menu__button:focus,
+.button:focus,
+.card__icon-button:focus {
+  outline: none;
+}
+
 /* Фильтры */
 .contrast {
   filter: contrast(150%);
@@ -101,11 +107,11 @@
 }
 
 .like-icon.is-liked {
-  animation: scale 0.3s 0.1s ease-in reverse;
+  animation: scale 0.3s 0.1s ease-in alternate;
 }
 
 .like-icon .heart {
-  transition: fill 0.1s;
+  transition: fill 0.1s linear;
   transform-origin: center;
 }
 
@@ -161,11 +167,6 @@
 .like-icon .sparks {
   opacity: 0;
   fill: var(--heart-color);
-}
-
-.like-icon.is-liked .sparks {
-  fill: var(--heart-color);
-  transition: fill 0.3s 0.3s ease-in reverse;
 }
 /* /SVG */
 
@@ -347,12 +348,6 @@
 .theme-menu__button:focus-visible:after {
   transform: scaleX(1);
 }
-
-.theme-menu__button:focus,
-.button:focus,
-.card__icon-button {
-  outline: none;
-}
 /* /шапка */
 
 /* карточки */
@@ -425,10 +420,11 @@
   }
 }
 
-@supports (text-stroke: 1px var(--text-stroke)) {
+@supports (text-stroke: 1px var(--text-stroke)) or (-webkit-text-stroke: 1px var(--text-stroke)) {
   .label__text {
     text-shadow: none;
     text-stroke: 1px var(--text-stroke);
+    -webkit-text-stroke: 1px var(--text-stroke);
   }
 }
 /* /карточки */
@@ -436,7 +432,6 @@
 /* dialog */
 .dialog {
   display: block;
-  overflow: hidden;
   padding: 29px 30px;
   font-family: var(--accent-font-family);
   font-size: 14px;
