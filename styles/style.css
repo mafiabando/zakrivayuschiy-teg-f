@@ -375,6 +375,7 @@
   flex-direction: column;
   padding: 25px;
   gap: 27px;
+  font-variation-settings: var(--text-font-weight);
 }
 
 .like__button-container {
