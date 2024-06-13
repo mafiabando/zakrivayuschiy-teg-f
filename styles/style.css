@@ -22,19 +22,17 @@
   background-color: var(--page-bg-color);
   color: var(--text-color);
   background-image: repeating-linear-gradient(
-      90deg,
-      var(--bg-color),
+      to right,
       var(--bg-color),
       transparent 2px
     ),
     repeating-linear-gradient(
-      180deg,
+      to bottom,
       var(--bg-color-from),
-      var(--bg-color-to),
-      transparent 2px 
+      var(--bg-color-to) 2px
     ),
-    repeating-linear-gradient(
-      180deg,
+    linear-gradient(
+      to bottom,
       var(--bg-color-from) 0.01%,
       var(--bg-color-to)
     );
@@ -104,16 +102,12 @@
   z-index: 1;
 }
 
-.like-icon.is-liked {
-  animation: scale 0.3s 0.1s ease-in alternate;
-}
-
 .like-icon .heart {
-  transition: fill 0.1s linear;
   transform-origin: center;
 }
 
 .like-icon .contour {
+  transition: fill 0.1s linear;
   fill: var(--text-color);
 }
 
@@ -177,7 +171,7 @@
   background: none;
   cursor: pointer;
   border: 2px solid var(--border-color);
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease;
   overflow: hidden;
 }
 
@@ -482,7 +476,7 @@
   }
 
   .dialog__message {
-    width: 75%;
+    width: 77%;
   }
 
   .button__icon {
